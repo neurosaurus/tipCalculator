@@ -7,6 +7,7 @@
 //
 
 #import "TGAppDelegate.h"
+#import "TIPViewController.h"
 
 @implementation TGAppDelegate
 
@@ -14,6 +15,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    TIPViewController *vc = [[TIPViewController alloc] init];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
