@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self updateValues];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,7 +59,7 @@
     float tipAmount = billAmount * [tipValues[self.tipControl.selectedSegmentIndex] floatValue];
     float totalAmount = tipAmount + billAmount;
     
-    self.tipLabel.text = [NSString stringWithFormat:@"%f", tipAmount];
-    self.totalLabel.text = [NSString stringWithFormat:@"%f", totalAmount];
+    self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
+    self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
 }
 @end
