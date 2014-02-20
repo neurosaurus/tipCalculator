@@ -7,6 +7,7 @@
 //
 
 #import "TIPViewController.h"
+#import "SettingsViewController.h"
 
 @interface TIPViewController ()
 
@@ -17,6 +18,7 @@
 
 - (IBAction)onTap:(id)sender;
 - (void)updateValues;
+
 
 
 @end
@@ -36,6 +38,9 @@
 {
     [super viewDidLoad];
     [self updateValues];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings"
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self action:@selector(onSettingsButton)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,5 +66,10 @@
     
     self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
     self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
+}
+
+- (void)onSettingsButton
+{
+    [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
 }
 @end
