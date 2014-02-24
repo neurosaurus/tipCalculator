@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
+@property (strong, nonatomic) NSArray *tipValues;
 
 - (IBAction)onTap:(id)sender;
 - (void)updateValues;
@@ -41,6 +42,18 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings"
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:self action:@selector(onSettingsButton)];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger index = [defaults integerForKey:@"dPercent"];
+    [self.tipControl setSelectedSegmentIndex:index];
+    
+    [self updateValues];
+
 }
 
 - (void)didReceiveMemoryWarning
