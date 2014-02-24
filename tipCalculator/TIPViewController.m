@@ -38,18 +38,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self updateValues];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings"
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:self action:@selector(onSettingsButton)];
+    [self updateValues];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSInteger index = [defaults integerForKey:@"dPercent"];
-    [self.tipControl setSelectedSegmentIndex:index];
+    NSInteger defaultTip = [defaults integerForKey:@"defPercent"];
+    [self.tipControl setSelectedSegmentIndex:defaultTip];
     
     [self updateValues];
 

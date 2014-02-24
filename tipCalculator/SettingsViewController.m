@@ -67,7 +67,6 @@
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component
 {
-    //user default gets saved
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setInteger:row forKey:@"defPercent"];
     [defaults synchronize];
