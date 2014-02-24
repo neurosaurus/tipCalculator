@@ -42,7 +42,6 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings"
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:self action:@selector(onSettingsButton)];
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated

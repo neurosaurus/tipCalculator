@@ -32,7 +32,7 @@
     self.tipPercent = @[@"10%", @"15%", @"20%"];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSInteger index = [defaults integerForKey:@"dPercent"];
+    NSInteger index = [defaults integerForKey:@"defPercent"];
     [self.defaultPercent selectRow:index
                        inComponent:0
                           animated:YES];
@@ -42,7 +42,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (NSInteger)numberOfComponentsInPickerView:
@@ -58,7 +57,7 @@
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView
-            titleForRow:(NSInteger)row
+             titleForRow:(NSInteger)row
             forComponent:(NSInteger)component
 {
     return self.tipPercent[row];
@@ -68,8 +67,9 @@
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component
 {
+    //user default gets saved
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:row forKey:@"dPercent"];
+    [defaults setInteger:row forKey:@"defPercent"];
     [defaults synchronize];
     
 }
