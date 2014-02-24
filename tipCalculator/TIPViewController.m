@@ -16,10 +16,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 @property (strong, nonatomic) NSArray *tipValues;
+@property (weak, nonatomic) IBOutlet UITextField *numberPeople;
+@property (weak, nonatomic) IBOutlet UILabel *amountPerPerson;
 
 - (IBAction)onTap:(id)sender;
 - (void)updateValues;
-
+- (void)onSettingsButton;
 
 
 @end
@@ -42,6 +44,8 @@
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:self action:@selector(onSettingsButton)];
     [self updateValues];
+    
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -76,8 +80,12 @@
     float tipAmount = billAmount * [tipValues[self.tipControl.selectedSegmentIndex] floatValue];
     float totalAmount = tipAmount + billAmount;
     
+    float people = [self.numberPeople.text floatValue];
+    float eachPerson = (totalAmount / people);
+    
     self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
     self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
+    self.amountPerPerson.text = [NSString stringWithFormat:@"$%0.2f", eachPerson];
 }
 
 - (void)onSettingsButton
