@@ -24,6 +24,7 @@
     self.window.rootViewController = nvc;
     
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
