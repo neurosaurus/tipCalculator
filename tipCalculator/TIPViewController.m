@@ -81,6 +81,9 @@
     float totalAmount = tipAmount + billAmount;
     
     float people = [self.numberPeople.text floatValue];
+    if (people == 0.0) {
+        people = 1.0;
+    };
     float eachPerson = (totalAmount / people);
     
     self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
