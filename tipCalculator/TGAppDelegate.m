@@ -22,12 +22,16 @@
     
     TIPViewController *vc = [[TIPViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = nvc;
+    //self.window.rootViewController = nvc;
     
     NSBundle *appBundle = [NSBundle mainBundle];
     
     TGPhotoViewController *pvc = [[TGPhotoViewController alloc] initWithNibName:@"TGPhotoViewController"
                                                                          bundle:appBundle];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[vc, pvc];
+    self.window.rootViewController = tabBarController;
     
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

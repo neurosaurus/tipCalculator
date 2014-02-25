@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TGPhotoViewController">
             <connections>
                 <outlet property="imageView" destination="c7m-9N-7wY" id="B5H-te-X9n"/>
+                <outlet property="toolbar" destination="A6G-oJ-rwR" id="6lt-ON-OVq"/>
                 <outlet property="view" destination="1" id="VTD-Zg-7Rb"/>
             </connections>
         </placeholder>
@@ -19,6 +20,17 @@
                     <rect key="frame" x="0.0" y="51" width="322" height="392"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6G-oJ-rwR">
+                    <rect key="frame" x="0.0" y="443" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem systemItem="camera" id="6c1-r5-jT7">
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="QHS-Cy-ZDl"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
