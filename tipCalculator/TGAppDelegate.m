@@ -8,6 +8,7 @@
 
 #import "TGAppDelegate.h"
 #import "TIPViewController.h"
+#import "TGPhotoViewController.h"
 
 @implementation TGAppDelegate
 
@@ -22,6 +23,11 @@
     TIPViewController *vc = [[TIPViewController alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nvc;
+    
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    TGPhotoViewController *pvc = [[TGPhotoViewController alloc] initWithNibName:@"TGPhotoViewController"
+                                                                         bundle:appBundle];
     
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

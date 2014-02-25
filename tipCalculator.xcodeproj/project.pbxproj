@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB240A7118BC265700F089F5 /* TGPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB240A6F18BC265700F089F5 /* TGPhotoViewController.m */; };
+		EB240A7218BC265700F089F5 /* TGPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB240A7018BC265700F089F5 /* TGPhotoViewController.xib */; };
 		EB52373718B5A90200DEE422 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52373518B5A90200DEE422 /* SettingsViewController.m */; };
 		EB52373818B5A90200DEE422 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB52373618B5A90200DEE422 /* SettingsViewController.xib */; };
 		EB7FBE0F18B3269C00C3AC88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7FBE0E18B3269C00C3AC88 /* Foundation.framework */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB240A6E18BC265700F089F5 /* TGPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGPhotoViewController.h; sourceTree = "<group>"; };
+		EB240A6F18BC265700F089F5 /* TGPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGPhotoViewController.m; sourceTree = "<group>"; };
+		EB240A7018BC265700F089F5 /* TGPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TGPhotoViewController.xib; sourceTree = "<group>"; };
 		EB52373418B5A90200DEE422 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		EB52373518B5A90200DEE422 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		EB52373618B5A90200DEE422 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -121,6 +126,9 @@
 				EB7FBE1E18B3269C00C3AC88 /* TGAppDelegate.m */,
 				EB7FBE3D18B329A500C3AC88 /* TIPViewController.h */,
 				EB7FBE3E18B329A500C3AC88 /* TIPViewController.m */,
+				EB240A6E18BC265700F089F5 /* TGPhotoViewController.h */,
+				EB240A6F18BC265700F089F5 /* TGPhotoViewController.m */,
+				EB240A7018BC265700F089F5 /* TGPhotoViewController.xib */,
 				EB7FBE3F18B329A500C3AC88 /* TIPViewController.xib */,
 				EB52373418B5A90200DEE422 /* SettingsViewController.h */,
 				EB52373518B5A90200DEE422 /* SettingsViewController.m */,
@@ -237,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB7FBE1918B3269C00C3AC88 /* InfoPlist.strings in Resources */,
+				EB240A7218BC265700F089F5 /* TGPhotoViewController.xib in Resources */,
 				EB7FBE4118B329A500C3AC88 /* TIPViewController.xib in Resources */,
 				EB7FBE2118B3269C00C3AC88 /* Images.xcassets in Resources */,
 				EB52373818B5A90200DEE422 /* SettingsViewController.xib in Resources */,
@@ -259,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB7FBE4018B329A500C3AC88 /* TIPViewController.m in Sources */,
+				EB240A7118BC265700F089F5 /* TGPhotoViewController.m in Sources */,
 				EB7FBE1B18B3269C00C3AC88 /* main.m in Sources */,
 				EB7FBE1F18B3269C00C3AC88 /* TGAppDelegate.m in Sources */,
 				EB52373718B5A90200DEE422 /* SettingsViewController.m in Sources */,
