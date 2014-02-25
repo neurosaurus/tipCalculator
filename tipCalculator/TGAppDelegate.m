@@ -24,10 +24,7 @@
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     //self.window.rootViewController = nvc;
     
-    NSBundle *appBundle = [NSBundle mainBundle];
-    
-    TGPhotoViewController *pvc = [[TGPhotoViewController alloc] initWithNibName:@"TGPhotoViewController"
-                                                                         bundle:appBundle];
+    TGPhotoViewController *pvc = [[TGPhotoViewController alloc] init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[vc, pvc];

@@ -32,7 +32,11 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Tip Calculator";
+        self.tabBarItem.title = @"Tip Calculator";
+        
+        UIImage *i = [UIImage imageNamed:@"Tip.png"];
+        
+        self.tabBarItem.image = i;
     }
     return self;
 }
