@@ -9,6 +9,7 @@
 #import "TGAppDelegate.h"
 #import "TIPViewController.h"
 #import "TGPhotoViewController.h"
+#import "TRPSettingsViewController.h"
 
 @implementation TGAppDelegate
 
@@ -20,18 +21,20 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    TIPViewController *vc = [[TIPViewController alloc] init];
-    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    TIPViewController *tipViewController = [[TIPViewController alloc] init];
+    TGPhotoViewController *photoViewController = [[TGPhotoViewController alloc] init];
+    TRPSettingsViewController *settingsViewController = [[TRPSettingsViewController alloc] init];
+    
+    //UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     //self.window.rootViewController = nvc;
-    
-    TGPhotoViewController *pvc = [[TGPhotoViewController alloc] init];
-    
+
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[vc, pvc];
+    tabBarController.viewControllers = @[tipViewController, photoViewController, settingsViewController];
     self.window.rootViewController = tabBarController;
     
-    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    //[[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
+    //[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

@@ -7,7 +7,7 @@
 //
 
 #import "TIPViewController.h"
-#import "SettingsViewController.h"
+#import "TRPSettingsViewController.h"
 
 @interface TIPViewController ()
 
@@ -97,6 +97,6 @@
 
 - (void)onSettingsButton
 {
-    [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[TRPSettingsViewController alloc] init] animated:YES];
 }
 @end

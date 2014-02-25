@@ -16,4 +16,11 @@
 - (UIImage *)imageForKey:(NSString *)key;
 - (void)deleteImageForKey:(NSString *)key;
 
+//- (void)setImage:(UIImage *)image forKey:(NSString *)key
+//{
+//    [self.dictionary setObject:image forKey:key];
+//}
+
+//- (UIImage *)imageforKey:
+
 @end

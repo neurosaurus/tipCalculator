@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Tripta Gupta. All rights reserved.
 //
 
-#import "SettingsViewController.h"
+#import "TRPSettingsViewController.h"
 
-@interface SettingsViewController ()
+@interface TRPSettingsViewController ()
 
 @property (weak, nonatomic) IBOutlet UIPickerView *defaultPercent;
 
 @end
 
-@implementation SettingsViewController
+@implementation TRPSettingsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

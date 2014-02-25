@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface TRPSettingsViewController : UIViewController
 
 @property (nonatomic, strong) NSArray *tipPercent;
 
