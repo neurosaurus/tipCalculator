@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TGPhotoViewController : UIViewController
+@interface TRPImageViewController : UIViewController
 
 @end

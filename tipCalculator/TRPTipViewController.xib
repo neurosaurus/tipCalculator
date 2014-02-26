@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TIPViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRPTipViewController">
             <connections>
                 <outlet property="amountPerPerson" destination="n5v-dC-y7A" id="1BZ-AF-MaU"/>
                 <outlet property="billTextField" destination="sMH-n0-CY3" id="quU-e8-5Rs"/>

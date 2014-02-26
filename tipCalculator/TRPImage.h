@@ -1,13 +1,16 @@
 //
-//  TRPPhoto.m
+//  TRPPhoto.h
 //  tipCalculator
 //
 //  Created by Tripta Gupta on 2/25/14.
 //  Copyright (c) 2014 Tripta Gupta. All rights reserved.
 //
 
-#import "TRPPhoto.h"
+#import <Foundation/Foundation.h>
 
-@implementation TRPPhoto
+@interface TRPImage : NSObject
+{
+    NSDate *_dateCreated;
+}
 
 @end

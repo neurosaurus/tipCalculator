@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 Tripta Gupta. All rights reserved.
 //
 
-#import "TGAppDelegate.h"
-#import "TIPViewController.h"
-#import "TGPhotoViewController.h"
+#import "TRPAppDelegate.h"
+#import "TRPTipViewController.h"
+#import "TRPImageViewController.h"
 #import "TRPSettingsViewController.h"
 
-@implementation TGAppDelegate
+@implementation TRPAppDelegate
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -20,8 +20,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    TIPViewController *tipViewController = [[TIPViewController alloc] init];
-    TGPhotoViewController *photoViewController = [[TGPhotoViewController alloc] init];
+    TRPTipViewController *tipViewController = [[TRPTipViewController alloc] init];
+    TRPImageViewController *photoViewController = [[TRPImageViewController alloc] init];
     TRPSettingsViewController *settingsViewController = [[TRPSettingsViewController alloc] init];
     
     //UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];

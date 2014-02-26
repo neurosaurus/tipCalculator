@@ -1,5 +1,5 @@
 //
-//  TGAppDelegate.h
+//  TIPViewController.h
 //  tipCalculator
 //
 //  Created by Tripta Gupta on 2/17/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TGAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface TRPTipViewController : UIViewController
 
 @end

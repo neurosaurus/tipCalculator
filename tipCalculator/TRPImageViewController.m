@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Tripta Gupta. All rights reserved.
 //
 
-#import "TGPhotoViewController.h"
+#import "TRPImageViewController.h"
 #import "TRPImageStore.h"
 
-@interface TGPhotoViewController ()
+@interface TRPImageViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @end
 
-@implementation TGPhotoViewController
+@implementation TRPImageViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

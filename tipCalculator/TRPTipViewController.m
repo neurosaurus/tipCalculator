@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Tripta Gupta. All rights reserved.
 //
 
-#import "TIPViewController.h"
+#import "TRPTipViewController.h"
 #import "TRPSettingsViewController.h"
 
-@interface TIPViewController ()
+@interface TRPTipViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *billTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation TIPViewController
+@implementation TRPTipViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
