@@ -6,20 +6,20 @@
 //  Copyright (c) 2014 Tripta Gupta. All rights reserved.
 //
 
-#import "TGImageStore.h"
+#import "TRPImageStore.h"
 
-@interface TGImageStore ()
+@interface TRPImageStore ()
 
 @property (nonatomic, strong) NSMutableDictionary *dictionary;
 
 @end
 
 
-@implementation TGImageStore
+@implementation TRPImageStore
 
 + (instancetype)sharedStore
 {
-    static TGImageStore *sharedStore = nil;
+    static TRPImageStore *sharedStore = nil;
     
     if (!sharedStore) {
         sharedStore = [[self alloc] initPrivate];
@@ -44,6 +44,24 @@
     }
 
     return self;
+}
+
+- (void)setImage:(UIImage *)image forKey:(NSString *)key
+{
+    self.dictionary[key] = image;
+}
+
+- (UIImage *)imageforKey:(NSString *)key
+{
+    return self.dictionary[key];
+}
+
+- (void)deleteImageForKey:(NSString *)key
+{
+    if (!key) {
+        return;
+    }
+    [self.dictionary removeObjectForKey:key];
 }
 
 @end

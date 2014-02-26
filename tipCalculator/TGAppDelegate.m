@@ -19,7 +19,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     
     TIPViewController *tipViewController = [[TIPViewController alloc] init];
     TGPhotoViewController *photoViewController = [[TGPhotoViewController alloc] init];
@@ -31,7 +30,6 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[tipViewController, photoViewController, settingsViewController];
     self.window.rootViewController = tabBarController;
-    
     
     //[[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
     //[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

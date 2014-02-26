@@ -11,7 +11,8 @@
 		EB240A7218BC265700F089F5 /* TGPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB240A7018BC265700F089F5 /* TGPhotoViewController.xib */; };
 		EB52373718B5A90200DEE422 /* TRPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52373518B5A90200DEE422 /* TRPSettingsViewController.m */; };
 		EB52373818B5A90200DEE422 /* TRPSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB52373618B5A90200DEE422 /* TRPSettingsViewController.xib */; };
-		EB52D78E18BD26A9009FE75F /* TGImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52D78D18BD26A9009FE75F /* TGImageStore.m */; };
+		EB52D78E18BD26A9009FE75F /* TRPImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52D78D18BD26A9009FE75F /* TRPImageStore.m */; };
+		EB52D79118BDB856009FE75F /* TRPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = EB52D79018BDB856009FE75F /* TRPPhoto.m */; };
 		EB7FBE0F18B3269C00C3AC88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7FBE0E18B3269C00C3AC88 /* Foundation.framework */; };
 		EB7FBE1118B3269C00C3AC88 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7FBE1018B3269C00C3AC88 /* CoreGraphics.framework */; };
 		EB7FBE1318B3269C00C3AC88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7FBE1218B3269C00C3AC88 /* UIKit.framework */; };
@@ -45,8 +46,10 @@
 		EB52373418B5A90200DEE422 /* TRPSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPSettingsViewController.h; sourceTree = "<group>"; };
 		EB52373518B5A90200DEE422 /* TRPSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPSettingsViewController.m; sourceTree = "<group>"; };
 		EB52373618B5A90200DEE422 /* TRPSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRPSettingsViewController.xib; sourceTree = "<group>"; };
-		EB52D78C18BD26A9009FE75F /* TGImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGImageStore.h; sourceTree = "<group>"; };
-		EB52D78D18BD26A9009FE75F /* TGImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGImageStore.m; sourceTree = "<group>"; };
+		EB52D78C18BD26A9009FE75F /* TRPImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPImageStore.h; sourceTree = "<group>"; };
+		EB52D78D18BD26A9009FE75F /* TRPImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPImageStore.m; sourceTree = "<group>"; };
+		EB52D78F18BDB856009FE75F /* TRPPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRPPhoto.h; sourceTree = "<group>"; };
+		EB52D79018BDB856009FE75F /* TRPPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRPPhoto.m; sourceTree = "<group>"; };
 		EB7FBE0B18B3269C00C3AC88 /* tipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7FBE0E18B3269C00C3AC88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB7FBE1018B3269C00C3AC88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,10 +134,12 @@
 				EB7FBE3E18B329A500C3AC88 /* TIPViewController.m */,
 				EB7FBE3F18B329A500C3AC88 /* TIPViewController.xib */,
 				EB240A6E18BC265700F089F5 /* TGPhotoViewController.h */,
+				EB52D78F18BDB856009FE75F /* TRPPhoto.h */,
+				EB52D79018BDB856009FE75F /* TRPPhoto.m */,
 				EB240A6F18BC265700F089F5 /* TGPhotoViewController.m */,
 				EB240A7018BC265700F089F5 /* TGPhotoViewController.xib */,
-				EB52D78C18BD26A9009FE75F /* TGImageStore.h */,
-				EB52D78D18BD26A9009FE75F /* TGImageStore.m */,
+				EB52D78C18BD26A9009FE75F /* TRPImageStore.h */,
+				EB52D78D18BD26A9009FE75F /* TRPImageStore.m */,
 				EB52373418B5A90200DEE422 /* TRPSettingsViewController.h */,
 				EB52373518B5A90200DEE422 /* TRPSettingsViewController.m */,
 				EB52373618B5A90200DEE422 /* TRPSettingsViewController.xib */,
@@ -274,8 +279,9 @@
 			files = (
 				EB7FBE4018B329A500C3AC88 /* TIPViewController.m in Sources */,
 				EB240A7118BC265700F089F5 /* TGPhotoViewController.m in Sources */,
-				EB52D78E18BD26A9009FE75F /* TGImageStore.m in Sources */,
+				EB52D78E18BD26A9009FE75F /* TRPImageStore.m in Sources */,
 				EB7FBE1B18B3269C00C3AC88 /* main.m in Sources */,
+				EB52D79118BDB856009FE75F /* TRPPhoto.m in Sources */,
 				EB7FBE1F18B3269C00C3AC88 /* TGAppDelegate.m in Sources */,
 				EB52373718B5A90200DEE422 /* TRPSettingsViewController.m in Sources */,
 			);

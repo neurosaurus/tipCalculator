@@ -7,6 +7,7 @@
 //
 
 #import "TGPhotoViewController.h"
+#import "TRPImageStore.h"
 
 @interface TGPhotoViewController ()
 
