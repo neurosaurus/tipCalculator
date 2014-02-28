@@ -76,7 +76,6 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setInteger:row forKey:@"defPercent"];
     [defaults synchronize];
-    
 }
 
 @end
