@@ -7,6 +7,7 @@
 //
 
 #import "TRPImageViewController.h"
+#import "TRPImage.h"
 #import "TRPImageStore.h"
 
 @interface TRPImageViewController ()
@@ -18,7 +19,8 @@
 
 @implementation TRPImageViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil
+               bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -28,6 +30,10 @@
         
         UIImage *i = [UIImage imageNamed:@"photos_selected.png"];
         tbi.image = i;
+    
+//        NSUUID *uuid = [[NSUUID alloc] init];
+//        NSString *key = [uuid UUIDString];
+//        _itemKey = key;
     }
     
     return self;
@@ -38,6 +44,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+//
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    
+//    TGImage *image = self.item;
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -64,6 +77,9 @@
     didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+//    [[TRPImageStore sharedStore] setImage:image
+//                                   forKey:self.i.itemKey];
     
     self.imageView.image = image;
     
