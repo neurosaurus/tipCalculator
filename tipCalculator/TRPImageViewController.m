@@ -26,7 +26,8 @@
         
         tbi.title = @"Receipts";
         
-        UIImage *i = [UIImage imageNamed:@"Receipt.png"];
+        UIImage *i = [UIImage imageNamed:@"photos_selected.png"];
+        tbi.image = i;
     }
     
     return self;

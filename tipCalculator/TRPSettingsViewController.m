@@ -20,7 +20,13 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Settings";
+        
+        UITabBarItem *tbi = self.tabBarItem;
+        
+        tbi.title = @"Settings";
+        
+        UIImage *i = [UIImage imageNamed:@"gear_selected.png"];
+        tbi.image = i;
     }
     return self;
 }

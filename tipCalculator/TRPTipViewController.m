@@ -27,14 +27,14 @@
 @end
 
 @implementation TRPTipViewController
-
+ 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.tabBarItem.title = @"Tip Calculator";
         
-        UIImage *i = [UIImage imageNamed:@"Tip.png"];
+        UIImage *i = [UIImage imageNamed:@"calculator_selected.png"];
         
         self.tabBarItem.image = i;
     }
@@ -48,7 +48,6 @@
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:self action:@selector(onSettingsButton)];
     [self updateValues];
-    
     
 }
 

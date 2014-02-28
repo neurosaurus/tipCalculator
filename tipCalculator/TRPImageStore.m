@@ -14,7 +14,6 @@
 
 @end
 
-
 @implementation TRPImageStore
 
 + (instancetype)sharedStore
@@ -35,6 +34,7 @@
     return nil;
 }
 
+//designated initializer
 - (instancetype)initPrivate
 {
     self = [super init];
@@ -51,7 +51,7 @@
     self.dictionary[key] = image;
 }
 
-- (UIImage *)imageforKey:(NSString *)key
+- (UIImage *)imageForKey:(NSString *)key
 {
     return self.dictionary[key];
 }

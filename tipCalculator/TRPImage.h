@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface TRPImage : NSObject
-{
-    NSDate *_dateCreated;
-}
+
+@property (nonatomic, readonly, strong) NSDate *dateCreated;
+@property (nonatomic, copy) NSString *itemKey;
 
 @end
