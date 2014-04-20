@@ -10,4 +10,6 @@
 
 @interface TRPImageViewController : UIViewController
 
+- (instancetype)initForNewItem:(BOOL)isNew;
+
 @end

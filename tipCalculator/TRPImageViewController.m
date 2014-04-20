@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
+
 @end
 
 @implementation TRPImageViewController
@@ -31,8 +32,8 @@
         UIImage *i = [UIImage imageNamed:@"photos_selected.png"];
         tbi.image = i;
     
-//        NSUUID *uuid = [[NSUUID alloc] init];
-//        NSString *key = [uuid UUIDString];
+        NSUUID *uuid = [[NSUUID alloc] init];
+        NSString *key = [uuid UUIDString];
 //        _itemKey = key;
     }
     
@@ -79,7 +80,7 @@
     UIImage *image = info[UIImagePickerControllerOriginalImage];
     
 //    [[TRPImageStore sharedStore] setImage:image
-//                                   forKey:self.i.itemKey];
+//                                   forKey:self.photo.itemKey];
     
     self.imageView.image = image;
     
